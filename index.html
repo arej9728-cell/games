@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="在线小游戏合集">
+  <title>游戏大厅</title>
+  <link rel="stylesheet" href="site/styles.css">
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <span class="logo-icon" aria-hidden="true">🎮</span>
+        <span>游戏大厅</span>
+      </div>
+      <p class="tagline">挑选一款游戏，即刻开玩</p>
+    </header>
+
+    <div class="toolbar">
+      <div class="search-wrap">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input type="search" id="search" placeholder="搜索游戏…" autocomplete="off">
+      </div>
+      <span class="count" id="count">加载中…</span>
+    </div>
+
+    <main class="grid" id="grid" aria-live="polite">
+      <p class="empty">正在加载游戏…</p>
+    </main>
+
+    <footer>
+      <p>新增游戏：将构建产物放入独立文件夹，运行 <code>node scripts/generate-games.js</code> 更新列表</p>
+    </footer>
+  </div>
+  <script src="site/app.js" defer></script>
+</body>
+</html>
